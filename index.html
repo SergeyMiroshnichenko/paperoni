@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css"/>
+    <title>Document</title>
+</head>
+<body>
+<header class="header">
+    <div class="section_header">
+        <div class="container">
+            <a class="logo" href="#logo"><img src="/img/Logo.png" alt="">Куда пицца</a>
+            <nav class="navigation" id="menu">
+                <ul>
+                    <li><a href="#pizza">Пицца</a></li>
+                    <li><a href="#sushi">Суши</a></li>
+                    <li><a href="#snack">Закуски</a></li>
+                    <li><a href="#desert">Десерты</a></li>
+                    <li><a href="#drink">Напитки</a></li>
+                    <li><a href="#sause">Соусы</a></li>
+                    <li><a href="#kombo">Комбо</a></li>
+                </ul>
+                <div class="basket">
+                    <button class="btn"><img src="/img/basket.png" alt="">40 грн</button>
+                </div>     
+            </nav>
+            <div  id="nav-icon2">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="popup" id="popup">
+            </div>
+        </div>
+    </div>
+</header>
+<main class="main" id="logo">
+    <section class=" section_main">
+        <div class="container">
+            <div class="tabs">
+                <div class="tabs_nav">
+                    <button class="tab_nav-btn active" data-tab="#tab_1"><img src="/img/fire.png" alt=""> Акции </button>
+                    <button class="tab_nav-btn"  data-tab="#tab_2"><img src="/img/pizza.png" alt="">Пицца</button>
+                    <button class="tab_nav-btn"  data-tab="#tab_3"><img src="/img/sushi.png" alt="">Суши</button>
+                    <button class="tab_nav-btn"  data-tab="#tab_4"><img src="/img/drinks.png" alt="">Напитки</button>
+                    <button class="tab_nav-btn"  data-tab="#tab_5"><img src="/img/snacks.png" alt="">Закуски</button>
+                    <button class="tab_nav-btn"  data-tab="#tab_6"><img src="/img/kombo.png" alt="">Комбо</button>
+                    <button class="tab_nav-btn"  data-tab="#tab_7"><img src="/img/desserts.png" alt="">Десерты</button>
+                    <button class="tab_nav-btn"  data-tab="#tab_8"> <img src="/img/sauce.png" alt="">Соусы</button>
+                </div>
+            </div>
+            <div class="tab_content">
+                <div class="tab_item active" id="tab_1">
+                    <div class="fire">Акция 1</div>
+                    <div class="fire">Акция 2</div>
+                    <div class="fire">Акция 3</div>
+                    <div class="fire">Акция 4</div>
+                </div>
+                <div class="tab_item" id="tab_2">
+                    <div class="pizza">Pizza 1</div>
+                    <div class="pizza">Pizza 2</div>
+                    <div class="pizza">Pizza 3</div>
+                    <div class="pizza">Pizza 4</div>
+                </div>
+                <div class="tab_item" id="tab_3">
+                    <div class="sushi">Суши сет 1</div>
+                    <div class="sushi">Суши сет 2</div>
+                    <div class="sushi">Суши сет 3</div>
+                    <div class="sushi">Суши сет 4</div>
+                </div>
+                <div class="tab_item" id="tab_4">
+                    <div class="drinks">Напиток 1</div>
+                    <div class="drinks">Напиток 2</div>
+                    <div class="drinks">Напиток 3</div>
+                    <div class="drinks">Напиток 4</div>
+                </div>
+                <div class="tab_item" id="tab_5">
+                    <div class="snacks">Закуски 1</div>
+                    <div class="snacks">Закуски 2</div>
+                    <div class="snacks">Закуски 3</div>
+                    <div class="snacks">Закуски 4</div>
+                </div>
+                <div class="tab_item" id="tab_6">
+                    <div class="kombo">Комбо 1</div>
+                    <div class="kombo">Комбо 2</div>
+                    <div class="kombo">Комбо 3</div>
+                    <div class="kombo">Комбо 4</div>
+                </div>
+                <div class="tab_item" id="tab_7">
+                    <div class="dessert">Десерт 1</div>
+                    <div class="dessert">Десерт 2</div>
+                    <div class="dessert">Десерт 3</div>
+                    <div class="dessert">Десерт 4</div>
+                </div>
+                <div class="tab_item" id="tab_8">
+                    <div class="sause">Соус 1</div>
+                    <div class="sause">Соус 2</div>
+                    <div class="sause">Соус 3</div>
+                    <div class="sause">Соус 4</div>
+                </div>
+            </div>
+            <div class="search_adress">
+                    <div class="examination">Проверить адресс доставки</div>
+                    <form>
+                        <input type="text" name="region" placeholder="Адрес">
+                        <button class="examination_btn">Проверить</button>
+                    </form>
+                    
+            </div>
+            <div class="wrapper_food">
+                <div class="name_product" id="pizza">
+                    <h2>Пицца</h2>
+                    <button class="filter_btn"><img src="/img/filter.png" alt=""> Фильтры</button>
+                </div>
+            </div>
+            <div class="catalog">
+                <div class="box_catalog">
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper_food">
+                <div class="name_product" id="sushi">
+                    <h2>Суши</h2>
+                    <button class="filter_btn"><img src="/img/filter.png" alt=""> Фильтры</button>
+                </div>
+            </div>
+            <div class="catalog">
+                <div class="box_catalog">
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/sushi_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/sushi_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/sushi_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/sushi_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/sushi_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/sushi_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/sushi_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/sushi_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <div class="wrapper_food">
+                <div class="name_product" id="snack">
+                    <h2>Закуски</h2>
+                    <button class="filter_btn"><img src="/img/filter.png" alt=""> Фильтры</button>
+                </div>
+            </div>
+            <div class="catalog">
+                <div class="box_catalog">
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/sneck_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/sneck_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/sneck_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/sneck_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/sneck_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/sneck_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/sneck_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/sneck_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="wrapper_food">
+                <div class="name_product" id="desert">
+                    <h2>Десерты</h2>
+                    <button class="filter_btn"><img src="/img/filter.png" alt=""> Фильтры</button>
+                </div>
+            </div>
+            <div class="catalog">
+                <div class="box_catalog">
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/desert_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/desert_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/desert_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/desert_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/desert_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/desert_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/desert_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/desert_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper_food">
+                <div class="name_product" id="drink">
+                    <h2>Напитки</h2>
+                    <button class="filter_btn"><img src="/img/filter.png" alt=""> Фильтры</button>
+                </div>
+            </div>
+            <div class="catalog">
+                <div class="box_catalog">
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/drinks_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/drinks_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/drinks_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/drinks_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/drinks_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/drinks_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/drinks_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/drinks_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper_food">
+                <div class="name_product" id="sause">
+                    <h2>Соусы</h2>
+                    <button class="filter_btn"><img src="/img/filter.png" alt=""> Фильтры</button>
+                </div>
+            </div>
+            <div class="catalog">
+                <div class="box_catalog">
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/souse.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/souse.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/souse.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/souse.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/souse.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/souse.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/souse.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/souse.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper_food">
+                <div class="name_product" id="kombo">
+                    <h2>Комбо</h2>
+                    <button class="filter_btn"><img src="/img/filter.png" alt=""> Фильтры</button>
+                </div>
+            </div>
+            <div class="catalog">
+                <div class="box_catalog">
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/combo_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/combo_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/combo_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/combo_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/combo_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/combo_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/combo_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_box">
+                        <div class="wrapper_product">
+                            <img class="img_product" src="/img/combo_1.png" alt="">
+                            <div class="product">
+                                <h3>Чикен Сладкий Чилли</h3>
+                                <div class="ingredients">
+                                    Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соуc
+                                </div>
+                                <div class="order">
+                                    <button class="order_btn">Выбрать</button>
+                                <div class="price"> От 315 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="delivery">
+                <div class="delivery_ukraine">Доставка по Харькову</div>
+                <div class="delivery_text">Захотелось чего-то вкусного и сытного? Желание простое и понятное, только в холодильнике все не то, и до магазина идти лень. Все пропало? Нет. Недорого заказать пиццу в Москве очень просто! Вам на помощь спешит супергерой – Domino’s Pizza! Как у всякого супергероя, у Domino’s Pizza есть свои суперсилы: восхитительный вкус продукции из отборных ингредиентов; широкий ассортимент, включающий легендарные, фирменные и классические виды, для вегетарианцев и любителей экспериментировать; быстрая и бесплатная доставка пиццы в течение 30 минут, чтобы вкусное и ароматное блюдо не успевало остыть.
+
+                    Как сделать заказ
+                    Доставка пиццы от Domino’s – это когда Вам не нужно никуда ехать или звонить, ведь есть Интернет. Никогда еще заказ пиццы на дом в Москве не был таким простым! Чтобы заказать пиццу онлайн, Вам необходимо: выбрать понравившийся вариант и количество порций; положить желаемое в «Корзину»; не уходить далеко, так как вкусная пицца на заказ с доставкой уже мчится к Вам из ближайшей пиццерии Domino’s. И не забудьте оплатить заказ курьеру!</div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="container">
+        <div class="footer_pizza">
+            <ul>
+                <li class="title_footer">Куда пицца</li>
+                <li>© Copyright 2021 — Куда Пицца</li>
+            </ul>
+        </div>
+        <div class="our">
+            <ul>
+                <li class="title_footer">Куда пицца</li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Пользовательское соглашение</a></li>
+                <li><a href="#">Условия гарантии</a></li>
+            </ul>
+        </div>
+        <div class="help">
+            <ul>
+                <li class="title_footer">Помощь</li>
+                <li><a href="#">Ресторан </a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Поддержка</a></li>
+                <li><a href="#">Отследить заказ</a></li>
+            </ul>
+        </div>
+        <div class="contact_pizza">
+            <div class="adress_box">
+                <ul>
+                    <li class="title_footer">Контакты</li>
+                    <li><a href="tel:+380503277934"><img src="/img/tel.png" alt="">+380 050 32 77 934 </a></li>
+                    <li><address class="adress"><img src="/img/map.png" alt="">г.Харьков ул.Набережная 12 </address></li>
+                </ul>
+            </div>
+            <div class="box_social">
+                <ul>
+                    <li><a href="#"><img src="/img/face.png" alt="">Facebook </a></li>
+                    <li><a href="#"><img src="/img/insta.png" alt="">Instagram </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="/msm.js"></script>
+<script src="/jquery-3.6.0.min.js"></script>
+<script src="/slick.min.js"></script>
+<script src="/slick.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+</body>
+</html>

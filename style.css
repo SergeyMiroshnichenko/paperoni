@@ -1,0 +1,18 @@
+@import url(/header.css);
+@import url(/main.css);
+@import url(/footer.css);
+@font-face {
+  font-family: SFProText;
+  src: url(/fonts/FontsFree-Net-SFProText-Light-1.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: SFProText;
+  src: url(/fonts/FontsFree-Net-SFProText-Regular-1.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: SFProText;
+  src: url(/fonts/FontsFree-Net-SFProText-Bold-1.ttf);
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */
